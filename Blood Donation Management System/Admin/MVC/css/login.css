@@ -32,3 +32,125 @@
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
+.login-left {
+    background: #e50914;
+    color: #fff;
+    width: 45%;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.login-left i {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.login-left h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.login-left p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* Right Side */
+.login-right {
+    width: 55%;
+    padding: 50px 40px;
+}
+
+.login-right h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #444;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    border-color: #e50914;
+}
+
+/* Login options */
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.login-options a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn i {
+    margin-right: 6px;
+}
+
+.login-btn:hover {
+    background: #c40812;
+}
+
+/* Register text */
+.register-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.register-text a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+/* Error messages */
+small {
+    display: block;
+    margin-top: 4px;
+}
+
+
