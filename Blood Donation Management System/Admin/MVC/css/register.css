@@ -1,0 +1,49 @@
+body{
+    font-family: Arial;
+    background: #f8f9fa;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+}
+
+.container{
+    width: 350px;
+}
+
+.register-card{
+    background:white;
+    padding:30px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+    border-radius:10px;
+}
+
+.register-card h2{
+    text-align:center;
+    color:#c00;
+}
+
+.register-card input, .register-card select{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+.register-card button{
+    width:100%;
+    padding:10px;
+    background:#c00;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.register-card .error{
+    color:red;
+    font-size:0.85rem;
+}
+
+.register-card .success{
+    color:green;
+    text-align:center;
+}
