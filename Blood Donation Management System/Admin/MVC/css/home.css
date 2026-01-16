@@ -1,0 +1,46 @@
+body{
+    font-family:Arial;
+    background:#f4f4f4;
+    margin:0;
+}
+
+header{
+    background:#c00;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+header .logout{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin-top:10px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    margin:40px auto;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    width:200px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+    border-radius:10px;
+}
+
+.donor{border-top:5px solid red;}
+.recipient{border-top:5px solid green;}
+.Admin{border-top:5px solid blue;}
+footer{
+    background:#c00;
+    color:white;
+    padding:20px;
+    text-align:center;
+    height: 300px;
+}
