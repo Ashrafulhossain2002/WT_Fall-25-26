@@ -1,0 +1,32 @@
+body{
+    font-family:Arial;
+    background:#fafafa;
+    text-align:center;
+}
+
+.menu{
+    width:300px;
+    margin:50px auto;
+}
+
+.menu a{
+    display:block;
+    padding:12px;
+    margin:8px 0;
+    background:#c00;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.logout{
+    background:black;
+}
+
+footer{
+    background:#c00;
+    color:white;
+    padding:20px;
+    text-align:center;
+    height: 300px;
+}
