@@ -1,0 +1,27 @@
+body{
+    background:#f2f2f2;
+    font-family:Arial;
+}
+
+.login-box{
+    width:300px;
+    margin:120px auto;
+    padding:30px;
+    background:white;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+input,button{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    background:black;
+    color:white;
+    border:none;
+}
+
+.error{color:red;}
