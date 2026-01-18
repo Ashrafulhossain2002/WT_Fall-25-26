@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: #f4f6f9;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* Page Title */
+h2{
+    margin:30px 0 20px;
+    color:#b30000;
+    font-size:28px;
+}
+
+/* Donor Card */
+.card{
+    background:white;
+    width:360px;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    transition:transform 0.3s ease;
+}
+
+.card:hover{
+    transform:scale(1.02);
+}
+
+/* Donor Name */
+.card p{
+    font-size:18px;
+    font-weight:600;
+    color:#333;
+}
+
+/* Buttons */
+.card button{
+    padding:8px 14px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+/* Approve Button */
+.card button:first-of-type{
+    background:#28a745;
+    color:white;
+}
+
+.card button:first-of-type:hover{
+    background:#218838;
+}
+
+/* Reject Button */
+.card .reject{
+    background:#dc3545;
+    color:white;
+}
+
+.card .reject:hover{
+    background:#c82333;
+}
+
+/* Back Link */
+a{
+    margin:25px 0;
+    text-decoration:none;
+    background:#000;
+    color:white;
+    padding:10px 18px;
+    border-radius:6px;
+    font-weight:600;
+}
+
+a:hover{
+    background:#333;
+}
+
+/* Footer */
+footer{
+    margin-top:auto;
+    width:100%;
+    background:#111;
+    color:#ccc;
+    padding:15px 20px;
+    text-align:center;
+    font-size:14px;
+}
+
+footer p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.6;
+}
