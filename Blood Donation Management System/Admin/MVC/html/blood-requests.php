@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>Blood Requests</title>
-<link rel="stylesheet" href="blood-requests.css">
+<link rel="stylesheet" href="../css/blood-request.css">
 </head>
 <body>
 

@@ -14,7 +14,7 @@ $user = $_SESSION['user'];
 <head>
 <meta charset="UTF-8">
 <title>Home | Blood Donation</title>
-<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
 
@@ -28,15 +28,21 @@ $user = $_SESSION['user'];
     <div class="card donor">
         <h3>Donors</h3>
         <p>Registered blood donors</p>
+    
     </div>
     <div class="card recipient">
         <h3>Recipients</h3>
         <p>Blood receivers</p>
     </div>
-    <div class="card Admin">
-        <h3>Admin</h3>
-        <p>Admin</p>
-    </div>
+
+
+    
+    <div class="card admin">
+    <h3>Admin</h3>
+    <p>System Administration</p>
+    <a href="admin-login.php" class="btn">Enter</a>
+</div>
+
 </div>
 <footer>
     <div>

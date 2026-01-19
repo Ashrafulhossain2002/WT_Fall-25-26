@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Donation Events</title>
-<link rel="stylesheet" href="events.css">
+<link rel="stylesheet" href="../css/events.css">
 </head>
 <body>
 

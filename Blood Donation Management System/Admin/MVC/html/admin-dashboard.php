@@ -10,7 +10,7 @@ if (!isset($_SESSION['admin_logged'])) {
 <html>
 <head>
 <title>Admin Dashboard</title>
-<link rel="stylesheet" href="admin-dashboard.css">
+<link rel="stylesheet" href="../css/admin-dashboard.css">
 </head>
 <body>
 
@@ -18,6 +18,7 @@ if (!isset($_SESSION['admin_logged'])) {
 
 <div class="menu">
 <a href="manage-users.php">Manage Users</a>
+<a href="view-users.php">View Registered Users</a>
 <a href="approve-donors.php">Approve Donors</a>
 <a href="blood-requests.php">Blood Requests</a>
 <a href="events.php">Donation Events</a>

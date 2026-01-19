@@ -16,7 +16,7 @@ $donors = [
 <html>
 <head>
 <title>Approve Donors</title>
-<link rel="stylesheet" href="approve-donor.css">
+<link rel="stylesheet" href="../css/appove-donor.css">
 </head>
 <body>
 

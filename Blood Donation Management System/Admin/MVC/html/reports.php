@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Reports</title>
-<link rel="stylesheet" href="reports.css">
+<link rel="stylesheet" href="../css/reports.css">
 </head>
 <body>
 

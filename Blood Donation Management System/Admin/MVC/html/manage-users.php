@@ -16,7 +16,7 @@ $users = [
 <html>
 <head>
 <title>Manage Users</title>
-<link rel="stylesheet" href="manage-users.css">
+<link rel="stylesheet" href="../css/manage-users.css">
 </head>
 <body>
 

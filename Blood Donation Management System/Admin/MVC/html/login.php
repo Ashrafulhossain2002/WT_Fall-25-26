@@ -1,5 +1,6 @@
 <?php
 session_start();
+include '../php/config.php';
 
 $emailErr = $passErr = $loginErr = "";
 $email = "";
@@ -11,26 +12,24 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $email = trim($_POST['email']);
+    $email = $_POST['email'];
     $password = $_POST['password'];
 
-    if ($email == "") $emailErr = "Email required";
-    if ($password == "") $passErr = "Password required";
+    if (empty($email)) $emailErr = "Email required";
+    if (empty($password)) $passErr = "Password required";
 
     if ($emailErr == "" && $passErr == "") {
+        $sql = "SELECT * FROM user_accounts WHERE email='$email'";
+        $result = mysqli_query($conn, $sql);
+        $user = mysqli_fetch_assoc($result);
 
-        if (isset($_SESSION['user'])) {
-            $user = $_SESSION['user'];
-
-            if ($email === $user['email'] && password_verify($password, $user['password'])) {
-                $_SESSION['logged_in'] = true;
-                header("Location: home.php");
-                exit();
-            } else {
-                $loginErr = "Invalid email or password";
-            }
+        if ($user && password_verify($password, $user['password'])) {
+            $_SESSION['logged_in'] = true;
+            $_SESSION['user'] = $user;
+            header("Location: home.php");
+            exit();
         } else {
-            $loginErr = "No user registered yet";
+            $loginErr = "Invalid email or password";
         }
     }
 }
@@ -41,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
 <meta charset="UTF-8">
 <title>Login | Blood Donation</title>
-<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
     
